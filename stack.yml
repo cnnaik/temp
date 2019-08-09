@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://system.openfaascloud.com
+functions:
+  hello-python-faas:
+    lang: python3
+    handler: ./hello-python-faas
+    image: hello-python-faas:latest
